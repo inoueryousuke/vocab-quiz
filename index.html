@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>英単語クイズ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>英単語クイズ</h1>
+
+    <div id="quiz">
+      <p id="q-text"></p>
+
+      <div id="choices"></div>
+
+      <button id="next" disabled>次へ</button>
+      <p id="result"></p>
+    </div>
+
+    <div id="finish" class="hidden">
+      <h2>終了！</h2>
+      <p id="score"></p>
+      <button id="restart">もう一度</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
