@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>英単語クイズ</title>
+  <title>英単語クイズ v2</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="card">
-    <h1>英単語クイズ</h1>
+    <h1>英単語クイズ <small class="ver">v2</small></h1>
+
+    <div class="topline">
+      <div class="progress" aria-label="進捗状況">
+        <div id="bar" class="progress-bar" style="width:0%"></div>
+      </div>
+      <div id="status" class="status">Q1 / 5・スコア 0</div>
+    </div>
 
     <div id="quiz">
       <p id="q-text"></p>
-
       <div id="choices"></div>
-
       <button id="next" disabled>次へ</button>
       <p id="result"></p>
     </div>

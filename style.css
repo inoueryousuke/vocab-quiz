@@ -6,12 +6,19 @@ body {
   background: #f6f7fb;
 }
 .card {
-  width: min(560px, 92vw);
+  width: min(640px, 92vw);
   background: #fff; padding: 24px 20px; border-radius: 16px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
-h1 { margin-top: 0; font-size: 1.4rem; }
-#q-text { font-size: 1.1rem; }
+h1 { margin: 0 0 12px; font-size: 1.5rem; display: flex; align-items: baseline; gap: 8px; }
+.ver { font-size: .9rem; color: #64748b; }
+.topline { display: flex; gap: 12px; align-items: center; }
+.progress {
+  flex: 1; height: 10px; background: #eef2ff; border-radius: 999px; overflow: hidden;
+}
+.progress-bar { height: 100%; background: #3b82f6; }
+.status { font-size: .9rem; color: #334155; min-width: 9ch; text-align: right; }
+#q-text { font-size: 1.1rem; margin-top: 14px; }
 #choices { display: grid; gap: 10px; margin: 16px 0; }
 .choice {
   padding: 12px; border: 1px solid #e3e6ef; border-radius: 12px; cursor: pointer;
